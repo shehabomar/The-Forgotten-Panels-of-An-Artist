@@ -1,0 +1,208 @@
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('./the-last-comic-on-earth/The Last Comic On Earth.ttf')format('truetype'); 
+}
+#button {
+    display: inline-block;
+    background-color: #e7637f;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #419cad;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-nav{
+    margin: 20px;
+}
+
+.fa-paint-brush {
+    width: 24px;
+    height: 24px; 
+}
+.comic-navbar {
+    background-color: #e7637f; 
+    border-bottom: 4px solid #333; 
+    border-radius: 0  0 30px 30px;
+    
+}
+
+.nav-link {
+    color: #fff !important; 
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #419cad !important; 
+}
+
+.home {
+    font-family: 'CustomFont', sans-serif;
+    color: #fff;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: solid #333 4px;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.comic-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+}
+  
+.comic-cover img {
+    max-width: 90%;
+    max-height: 90%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;
+    border: solid #333 4px; 
+    border-bottom: 8px solid #333;
+}
+  
+.comic-list h3{
+    font-family: 'CustomFont', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.description{
+    display: block !important;
+    text-align: center;
+}
+.head-p{
+    font-weight: bold;
+    display: block;
+}
+
+.comic-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.comic-card {
+    background-color: #fff;
+    border: 4px solid #333;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.comic-card img {
+    max-width: 100%; 
+    height: auto;     
+    max-height: 400px; 
+    cursor: pointer;
+}
+
+.comic-card:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease; 
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* ------------- Page for members -------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid 4px #000;
+    border-radius: 10px;
+}
+
+.member {
+    width: 300px;
+    margin: 30px;
+}
+
+.member img {
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 25px;
+    border: solid 4px #000;
+    border-bottom: 8px solid #000;
+}
+
+.member h2 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.member p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.btn-primary{
+    margin-top: 20px;
+    background: #e7637f;
+    border: #e7637f;
+}
+.btn-primary:hover{
+    background: #419cad;
+    border: #419cad;
+}

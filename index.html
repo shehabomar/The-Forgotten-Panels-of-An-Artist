@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <title>The Forgotten Panels of An Artist</title>
+    <style>
+        body{
+            margin-top: 200px ;
+            font-family: monospace;
+            background-color: #ffe2d8;
+
+        }
+        .navbar .container{
+            display: block !important;
+        }
+
+    </style>
+</head>
+<body>
+
+    <a id="button"></a>
+    <nav class="navbar navbar-expand-lg navbar-light comic-navbar fixed-top">
+        <div class="container">
+            <div class="text-center mx-auto">
+                <br><br>
+                <a class="navbar-brand home" href="#home">The Forgotten Panels of An Artist</a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#comic">Comic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="chars.html">Members</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+     <main>
+        <section class="comic-cover" >
+            <img src="imgs/cover.jpeg" alt="Comic Cover">
+        </section>
+        <p class = "description">
+            <span class="head-p">Concept & Theme</span>
+            Our Webpage comic strip seeks to bring life to a forgotten artist's work. As many artists, creators and developers often have many forgotten works that usually start with enthusiasm and passion but end up gathering virtual dust within a folder. Our team imagined comic characters in a forgotten webpage come to life and escape the frame they are frozen within. We wanted this comic to be a gentle and subtle reminder to our audience to look back at their own forgotten projects and maybe give them another shot!    
+        </p>
+        <p class = "description" >
+            <span class="head-p">Story Line</span>
+            The comic represents the story of two comic characters that start interacting together and decide to break free from the stagnant state they were left in. Inspired by shows like Rick and Morty and Archer, we sought to create a Meta Story that steers away from classical storytelling techniques mostly used in conventional comic strips. With this meta-story we tried to create a unique and fun experience for the audience unlike ordinary storytelling.  
+        </p>
+        <p class = "description" >
+            <span class="head-p"  id="comic">Design & animation</span>
+            The comic was designed using an Ipad and then exported to photoshop software to add more details such as background colors and the text. The file was then exported as an SVG file to be used for the Web-page. In order to edit and make the animation interactive, we used html,css and Java-script in order to enlarge the comic panels on hover and include sound on click.
+            This was an enjoyable and enriching process as it opened our eyes to the potential of SVG files and how they can be included in Web-pages.
+        </p>
+        <section class="comic-list">
+            <h3>The Forgotten Panels of An Artist</h3>
+            <div class="row">
+                <!-- First Row -->
+                <div class="col-sm-6">
+                    <div class="comic-card" data-audio="./sounds/knock.mp3">
+                        <img src="./panels/1.png" alt="Comic 1">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="comic-card" data-audio="./sounds/shock.mp3">
+                        <img src="./panels/2.png" alt="Comic 2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Second Row -->
+                <div class="col-sm-6">
+                    <div class="comic-card" data-audio="./sounds/sad.mp3">
+                        <img src="./panels/3.png" alt="Comic 3">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="comic-card" data-audio="./sounds/really.mp3">
+                        <img src="./panels/4.png" alt="Comic 4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Third Row -->
+                <div class="col-sm-6">
+                    <div class="comic-card" data-audio="./sounds/break.mp3">
+                        <img src="./panels/5.png" alt="Comic 5">
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="comic-card" data-audio="./sounds/evillaugh.mp3">
+                        <img src="./panels/6.png" alt="Comic 6">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Fourth Row -->
+                <div class="col-sm-12">
+                    <div class="comic-card">
+                        <img src="./panels/unfinished.jpeg" alt="Comic 7">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    </main>
+    <footer>
+        <p>&copy; 2023 Comic Name</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
